@@ -13,7 +13,7 @@ const About = () => {
                     <div className="mt-10 text-gray-800 font-medium dark:text-white">
                         <p className="mb-4">
                             My name is Florence, I'm a frontend  developer with a huge appetite for appealing interfaces and problem solving.
-                            Some of my day-to-day technologies are HTML/CSS, Javascript, Typescript, React, Redux, Git... And hey! I just recently started about learning Web3 and NFTs. Feel free to get in touch 😊
+                            Some of my day-to-day technologies are HTML/CSS, Javascript, Typescript, React, Redux, Git... And hey! I just recently started learning about Web3 and NFTs. Feel free to get in touch 😊
                         </p>
                     </div>
                 </div>
