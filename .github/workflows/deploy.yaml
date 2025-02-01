@@ -23,6 +23,6 @@ jobs:
         TAG="$(git rev-parse --short HEAD)"
         docker build \
           --build-arg INSTALL=ci \
-          --tag gcr.io/flo-adikwu/portfolio:$TAG \
+          --tag ghcr.io/flo-adikwu/portfolio:$TAG \
           .
-        docker push gcr.io/flo-adikwu/portfolio:$TAG
+        docker push ghcr.io/flo-adikwu/portfolio:$TAG
