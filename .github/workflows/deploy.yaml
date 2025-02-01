@@ -18,5 +18,8 @@ jobs:
       shell: bash
       run: |
         TAG="$(git rev-parse --short HEAD)"
-        docker build --tag gcr.io/flo-adikwu/portfolio:$TAG .
+        docker build \
+          --build-arg INSTALL=ci \
+          --tag gcr.io/flo-adikwu/portfolio:$TAG \
+          .
         docker push gcr.io/flo-adikwu/portfolio:$TAG
