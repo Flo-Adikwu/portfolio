@@ -19,6 +19,8 @@ jobs:
 
     - name: Build docker image
       shell: bash
+      env:
+        TLS_SECRET: ${{ secrets.TLS_SECRET }}
       run: |
         TAG="$(git rev-parse --short HEAD)"
         docker build \
@@ -27,3 +29,10 @@ jobs:
           .
         echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
         docker push ghcr.io/flo-adikwu/portfolio:$TAG
+
+        curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+        curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+        helm upgrade --install \
+          portfolio .deployment/helm \
+          --set app.image.tag=$TAG \
+          --set app.certificate.secret=$(echo -n "$TLS_SECRET" | base64 --decode)
