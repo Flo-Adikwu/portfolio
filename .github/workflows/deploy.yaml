@@ -12,8 +12,4 @@ jobs:
     steps:
     - name: Say hello
       shell: bash
-      run: echo "Hello, world!"
-
-    - name: What time is it?
-      shell: bash
-      run: date
+      run: ls -al
