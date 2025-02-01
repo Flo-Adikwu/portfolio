@@ -17,5 +17,6 @@ jobs:
     - name: Build docker image
       shell: bash
       run: |
-        docker build --tag portfolio:v0.0.0 .
+        TAG="$(git rev-parse --short HEAD)"
+        docker build --tag portfolio:$TAG .
         docker image ls
