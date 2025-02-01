@@ -21,6 +21,7 @@ jobs:
       shell: bash
       env:
         TLS_SECRET: ${{ secrets.TLS_SECRET }}
+        KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
       run: |
         TAG="$(git rev-parse --short HEAD)"
         docker build \
@@ -32,6 +33,10 @@ jobs:
 
         curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
         curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+        echo "$KUBE_CONFIG" | base64 --decode >> .kubeconfig.yaml
+        echo "$KUBE_CONFIG" | wc -c
+        export KUBE_CONFIG="$PWD/.kubeconfig.yaml"
+
         helm upgrade --install \
           portfolio .deployment/helm \
           --set app.image.tag=$TAG \
