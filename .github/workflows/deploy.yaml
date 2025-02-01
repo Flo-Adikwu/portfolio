@@ -25,4 +25,5 @@ jobs:
           --build-arg INSTALL=ci \
           --tag ghcr.io/flo-adikwu/portfolio:$TAG \
           .
+        echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
         docker push ghcr.io/flo-adikwu/portfolio:$TAG
