@@ -12,6 +12,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Say hello
+    - uses: docker/setup-buildx-action@v3
+
+    - name: Build docker image
       shell: bash
-      run: ls -al
+      run: |
+        docker build --tag portfolio:v0.0.0 .
+        docker image ls
