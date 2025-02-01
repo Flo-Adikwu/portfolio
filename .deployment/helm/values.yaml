@@ -1,0 +1,9 @@
+app:
+  hosts:
+  - florenceadikwu.com
+  - www.florenceadikwu.com
+  certificate:
+    secret: secret
+  image:
+    tag: 0d2d4c8
+    repository: ghcr.io/flo-adikwu/portfolio
