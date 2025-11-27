@@ -1,14 +1,27 @@
-import "./App.css";
-import Navigation from "./components/Navigation";
-import SectionOne from "./pages/SectionOne";
-import { Box } from "@mui/material";
+import React from 'react';
+import './App.css';
+
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Box className="App">
+    <div className="App">
       <Navigation />
-      <SectionOne />
-    </Box>
+      <Hero />
+      <div id="about">
+        <About />
+      </div>
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
