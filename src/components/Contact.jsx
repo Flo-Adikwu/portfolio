@@ -17,7 +17,7 @@ const Contact = () => {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:florenceadikwu@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:fadikwu.dev@gmail.com?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (e) => {
@@ -38,7 +38,7 @@ const Contact = () => {
     },
     {
       name: "Email",
-      url: "mailto:florenceadikwu@gmail.com",
+      url: "mailto:fadikwu.dev@gmail.com",
     },
   ];
 
@@ -123,11 +123,11 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 onClick={() =>
-                  (window.location.href = "mailto:florenceadikwu@gmail.com")
+                  (window.location.href = "mailto:fadikwu.dev@gmail.com")
                 }
                 className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30"
               >
-                florenceadikwu@gmail.com
+                fadikwu.dev@gmail.com
               </Button>
             </Card>
 

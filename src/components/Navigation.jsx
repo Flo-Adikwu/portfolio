@@ -22,7 +22,7 @@ const Navigation = () => {
             variant="gradient"
             size="md"
             onClick={() =>
-              (window.location.href = "mailto:florenceadikwu@gmail.com")
+              (window.location.href = "mailto:fadikwu.dev@gmail.com")
             }
           >
             Contact Me

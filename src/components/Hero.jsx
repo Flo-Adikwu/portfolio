@@ -68,7 +68,7 @@ const Hero = () => {
             variant="outline"
             size="lg"
             onClick={() =>
-              (window.location.href = "mailto:florenceadikwu@gmail.com")
+              (window.location.href = "mailto:fadikwu.dev@gmail.com")
             }
           >
             Get In Touch
