@@ -60,11 +60,11 @@ const SectionOne = () => {
 
             <div className="relative h-64 md:h-auto">
               <img
-                src="assets/images/headshot.jpeg"
+                src="assets/images/florenceadikwu.jpg"
                 alt="Florence Adikwu - Frontend Engineer"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent md:from-white/40"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-transparent md:from-white/20"></div>
             </div>
           </div>
         </Card>

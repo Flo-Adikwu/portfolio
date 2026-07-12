@@ -31,17 +31,14 @@ const Contact = () => {
     {
       name: "GitHub",
       url: "https://github.com/Flo-Adikwu",
-      icon: "💻",
     },
     {
       name: "LinkedIn",
       url: "https://linkedin.com/in/florenceadikwu1",
-      icon: "💼",
     },
     {
       name: "Email",
       url: "mailto:florenceadikwu@gmail.com",
-      icon: "📧",
     },
   ];
 

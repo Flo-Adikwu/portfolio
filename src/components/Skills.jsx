@@ -13,7 +13,6 @@ const Skills = () => {
         "Redux",
         "HTML/CSS",
       ],
-      icon: "⚛️",
     },
     {
       category: "Styling",
@@ -24,12 +23,10 @@ const Skills = () => {
         "Material-UI",
         "Styled Components",
       ],
-      icon: "🎨",
     },
     {
       category: "Tools & DevOps",
       skills: ["Git", "GitHub", "CI/CD", "Webpack", "Vite", "npm/yarn"],
-      icon: "🛠️",
     },
     {
       category: "Design Systems",
@@ -40,7 +37,6 @@ const Skills = () => {
         "Accessibility",
         "Figma",
       ],
-      icon: "📐",
     },
     {
       category: "Testing",
@@ -51,7 +47,6 @@ const Skills = () => {
         "jest-axe",
         "Unit Tests",
       ],
-      icon: "🧪",
     },
     {
       category: "Other",
@@ -62,7 +57,6 @@ const Skills = () => {
         "REST APIs",
         "GraphQL",
       ],
-      icon: "🚀",
     },
   ];
 

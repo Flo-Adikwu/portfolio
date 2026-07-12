@@ -4,6 +4,15 @@ import { Card, Button, Badge } from "aurora-design-system";
 const Projects = () => {
   const projects = [
     {
+      title: "Memory Lore",
+      description:
+        "A modern travel website that curates personalized trip itineraries and keepsakes, turning travel memories into physical, lasting mementos.",
+      tags: ["Website", "Travel", "Memories"],
+      link: "https://www.memorylore.com",
+      status: "Live",
+      featured: false,
+    },
+    {
       title: "Aurora Design System",
       description:
         "A modern React component library with 10 production-ready components, full TypeScript support, and comprehensive Storybook documentation.",
@@ -11,7 +20,7 @@ const Projects = () => {
       link: "https://aurora-ds.vercel.app",
       github: "https://github.com/Flo-Adikwu/aurora-design-system",
       status: "Live",
-      featured: true,
+      featured: false,
     },
     {
       title: "Esusu Financial Platform",
